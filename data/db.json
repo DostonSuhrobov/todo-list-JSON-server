@@ -1,11 +1,6 @@
 {
   "todos": [
     {
-      "content": "Build two lists, pending list and completed list",
-      "isCompleted": true,
-      "id": 3
-    },
-    {
       "content": "build three buttons for each todo task",
       "isCompleted": true,
       "id": 4
@@ -64,16 +59,6 @@
       "content": "somebody new",
       "isCompleted": "on",
       "id": 17
-    },
-    {
-      "content": "232",
-      "isCompleted": "on",
-      "id": 18
-    },
-    {
-      "content": "new staff is here",
-      "isCompleted": "on",
-      "id": 19
     }
   ]
 }
