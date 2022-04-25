@@ -17,7 +17,7 @@ fetch
       todoContainer.innerHTML += `
       <div id=todo-${todo.id}>
         <h2>${todo.content}</h2>
-        <p>${todo.isCompleted}</p>
+        <p>Compleated : ${todo.isCompleted}</p>
         <button data-id=${todo.id} id="edit-${todo.id}" data-action="edit">Edit</button>
         <button data-id=${todo.id} id="delete-${todo.id}" data-action="delete">Delete</button>
       </div>
@@ -29,7 +29,7 @@ fetch
       pendingContainer.innerHTML += `
       <div id=todo-${todo.id}>
         <h2>${todo.content}</h2>
-        <p>${todo.isCompleted}</p>
+        <p>Compleated : ${todo.isCompleted}</p>
         <button data-id=${todo.id} id="edit-${todo.id}" data-action="edit">Edit</button>
         <button data-id=${todo.id} id="delete-${todo.id}" data-action="delete">Delete</button>
       </div>
