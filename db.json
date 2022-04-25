@@ -46,11 +46,6 @@
       "id": 14
     },
     {
-      "content": "functional second ",
-      "isCompleted": "true",
-      "id": 15
-    },
-    {
       "content": "smth",
       "isCompleted": "false",
       "id": 16
@@ -66,9 +61,9 @@
       "id": 18
     },
     {
-      "content": "old stuff ",
+      "content": "smth",
       "isCompleted": "true",
-      "id": 19
+      "id": 20
     }
   ]
 }

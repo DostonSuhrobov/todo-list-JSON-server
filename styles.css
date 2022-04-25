@@ -31,4 +31,30 @@ body {
   height: 100px;
 }
 
+/* button */
+
+.button {
+  background-color: #66ADCC; /* Green */
+  border: none;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 0px 0px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+#content{
+  width: 60%;
+  padding: 9px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
 
