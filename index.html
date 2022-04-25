@@ -1,29 +1,22 @@
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <title>JSON Server</title>
-</head>
-<body>
-
-  <nav>
-
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Todo List with JSON server</title>
+  </head>
+  <body>
+    <h1>TODO</h1>
+    <div id='create-todo'>
+      <form id="todo-form">
+        <input id="content" placeholder="content..." required>
+        <input id="isCompleated" placeholder="isCompleated..." required>
+  
+        <input type="submit" value="Add todo">
+    </div>
     
-  <form>
-    <input type="text" name="content">
-    completed : <input type="checkbox" class="ifCompleted_checkbox" name="ifCompleted">
-    <br />
-    <button class="post_style">Submit</button>
-  </form>
+    <!-- dynamically populate books -->
+    <div id='todo-container'></div>
 
-  </nav>
-
-  <div class="blogs">
-    <!-- inject blogs here from js -->
-  </div>
-
-  <script src="js/index.js"></script>
-  <script src="js/create.js"></script>
-</body>
+    <script src='index.js'></script>
+  </body>
 </html>

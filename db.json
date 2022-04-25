@@ -46,8 +46,8 @@
       "id": 14
     },
     {
-      "content": "Functional first, stylish second",
-      "isCompleted": true,
+      "content": "functional second ",
+      "isCompleted": "true",
       "id": 15
     }
   ]
