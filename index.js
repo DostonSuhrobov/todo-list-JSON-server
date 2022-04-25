@@ -1,26 +1,49 @@
 
 document.addEventListener('DOMContentLoaded', function() {
 
-  const todoContainer = document.querySelector('#compleated-container') 
+  const todoContainer = document.querySelector('#compleated-container')
+  const pendingContainer = document.querySelector('#pending-container') 
   const todoForm = document.querySelector('#todo-form') 
   
   const todoURL = `http://localhost:3000/todos`
   let alltodos = [] 
   
-// fetch
+fetch
   fetch(`${todoURL}`)
     .then( response => response.json() ) 
     .then( todoData => todoData.forEach(function(todo) {
+      if( todo.isCompleted == 'true' || todo.isCompleted == true ){
       alltodos = todoData  
       todoContainer.innerHTML += `
       <div id=todo-${todo.id}>
         <h2>${todo.content}</h2>
+        <p>${todo.isCompleted}</p>
         <button data-id=${todo.id} id="edit-${todo.id}" data-action="edit">Edit</button>
         <button data-id=${todo.id} id="delete-${todo.id}" data-action="delete">Delete</button>
       </div>
       <div id=edit-todo-${todo.id}>
       </div>`
-    })) 
+    }
+    else if( todo.isCompleted == 'false' || todo.isCompleted == false ) {
+      alltodos = todoData  
+      pendingContainer.innerHTML += `
+      <div id=todo-${todo.id}>
+        <h2>${todo.content}</h2>
+        <p>${todo.isCompleted}</p>
+        <button data-id=${todo.id} id="edit-${todo.id}" data-action="edit">Edit</button>
+        <button data-id=${todo.id} id="delete-${todo.id}" data-action="delete">Delete</button>
+      </div>
+      <div id=edit-todo-${todo.id}>
+      </div>`
+    }
+    else {
+      todoContainer.innerHTML += ` `
+      pendingContainer.innerHTML += ` `
+    }
+
+  })) 
+
+
 
 
    // create

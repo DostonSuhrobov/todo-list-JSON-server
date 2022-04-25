@@ -6,20 +6,21 @@
     <title>Todo List with JSON server</title>
   </head>
   <body>
-    <h1>TODO</h1>
-    <div id='create-todo'>
-      <form id="todo-form">
-        <input id="content" placeholder="content..." required>
-        <input id="isCompleated" placeholder="isCompleated..." required>
-  
-        <input type="submit" value="Add todo">
-    </div>
-
+    <header class="header_container">
+      <h1>TODO</h1>
+      <div id='create-todo'>
+        <form id="todo-form">
+          <input id="content" placeholder="content..." required>
+          <input id="isCompleated" placeholder="isCompleated..." required>
+    
+          <input type="submit" value="Add todo">
+      </div>
+   </header>
       <div class="flex-container">
 
-       <div class="pending-container"></div>
+       <div id="pending-container"> <h2>Pending Task</h2> </div>
         
-        <div id='compleated-container'></div>
+        <div id='compleated-container'> <h2>Compleated Task</h2> </div>
       </div>
 
     <script src='index.js'></script>
