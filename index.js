@@ -1,7 +1,7 @@
 
 document.addEventListener('DOMContentLoaded', function() {
 
-  const todoContainer = document.querySelector('#todo-container') 
+  const todoContainer = document.querySelector('#compleated-container') 
   const todoForm = document.querySelector('#todo-form') 
   
   const todoURL = `http://localhost:3000/todos`
