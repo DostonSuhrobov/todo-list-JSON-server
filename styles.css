@@ -19,7 +19,7 @@ nav h1 {
 nav a {
   color: white;
   text-decoration: none;
-  background: #36cca2;
+  background: #dd9120;
   padding: 10px;
   border-radius: 10px;
 }
@@ -43,5 +43,32 @@ form {
   margin-top: 0;
 }
 .post a {
-  color: #36cca2;
+  color: #dca82d;
 }
+
+.delete{
+  background-color: #e24717;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.post_style{
+  background-color: #dca82d;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+

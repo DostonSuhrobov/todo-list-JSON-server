@@ -7,13 +7,13 @@ const deleteBtn = document.querySelector('.delete');
 const renderDetails =  async (e) => {
 
     const res =  await fetch('http://localhost:3000/todos/' + id);
-    const post = await res.json();
+    const todo = await res.json();
 
-    console.log(post);
+    console.log(todo);
 
     const template = ` 
-        <h1>${post.content}</h1>
-        <p> Completed : ${post.isCompleted}</p>
+        <h1>${todo.content}</h1>
+        <p> Completed : ${todo.isCompleted}</p>
     `
     container.innerHTML = template; 
 

@@ -49,16 +49,6 @@
       "content": "Functional first, stylish second",
       "isCompleted": true,
       "id": 15
-    },
-    {
-      "content": "go to the gym",
-      "isCompleted": "on",
-      "id": 16
-    },
-    {
-      "content": "somebody new",
-      "isCompleted": "on",
-      "id": 17
     }
   ]
 }
