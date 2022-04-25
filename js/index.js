@@ -16,8 +16,8 @@ const renderPosts = async () => {
             <div class="post">
                 <h2>${post.content}</h2>
                 <p>Compleated : ${post.isCompleted}</p>
-                <a href="/details.html?id=${post.id}">read more...</a>
-                <button class='delete'>delete</button>
+                <a href="/details.html?id=${post.id}">click here to delete</a>
+                
             </div>
         `
     });
